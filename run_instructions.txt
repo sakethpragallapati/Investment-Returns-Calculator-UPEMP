@@ -1,0 +1,51 @@
+======================================================
+UPEMC INCENTIVE CALCULATOR - RUN INSTRUCTIONS
+======================================================
+
+This project consists of a Python/FastAPI Backend and a Next.js/React Frontend.
+You will need to open TWO separate terminal windows to run both servers simultaneously.
+
+------------------------------------------------------
+TERMINAL 1: Run the Backend (Python / FastAPI)
+------------------------------------------------------
+1. Navigate to the backend directory:
+   cd backend
+
+2. (Optional but recommended) Create and activate a virtual environment:
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On Mac/Linux:
+   source venv/bin/activate
+
+3. Install the required Python dependencies:
+   pip install -r requirements.txt
+
+4. Start the FastAPI development server:
+   uvicorn main:app --reload
+
+   (The backend will run on http://localhost:8000)
+
+
+------------------------------------------------------
+TERMINAL 2: Run the Frontend (Next.js / Node)
+------------------------------------------------------
+1. Navigate to the frontend directory:
+   cd frontend
+
+2. Install the Node dependencies:
+   npm install
+
+3. Start the Next.js development server:
+   npm run dev
+
+   (The frontend will run on http://localhost:3000)
+
+
+------------------------------------------------------
+USAGE
+------------------------------------------------------
+Once both servers are running, open your web browser and navigate to:
+http://localhost:3000
+
+The frontend will automatically communicate with the backend API running on port 8000.
